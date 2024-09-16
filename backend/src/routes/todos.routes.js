@@ -6,7 +6,7 @@ const todosRouter = Router();
 
 todosRouter.get("/",validarJwt, getAllTodosCtrl);
 todosRouter.post("/", validarJwt, createTask);
-todosRouter.put('/task/:id', validarJwt, updateTask);
-todosRouter.delete('/task/:id', validarJwt, deleteTask)
+todosRouter.put('/:id', validarJwt, updateTask);
+todosRouter.delete('/:id', validarJwt, deleteTask)
 
 export { todosRouter };
